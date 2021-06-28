@@ -22,6 +22,7 @@ const questions =
         answer: '1'
     },
     {
+        
         question: 'Does color lift color?',
         A: 'YES',
         B: 'Definitely No',
@@ -34,8 +35,9 @@ const questions =
         A: 'Cut The Hair',
         B: 'Decolorize',
         C: 'Fill In Hair With Missing Pigments',
-        D: 'Nothing'
+        D: 'Nothing',
         answer: 'Fill In Hair With Missing Pigments'
+
     },
     {
         question: 'Over direction creates what?',
@@ -46,6 +48,37 @@ const questions =
         answer: 'Length In The Opposite Direction'
 }];
 
+
+
 // Timer 
+
+var timeLeft = 60;
+var timerId = setInterval(countdown, 1000);
+let timeEl = document.getElementById('time')
+function countdown() {
+    if (timeLeft <= 0) {
+        clearInterval(timerId);
+        endQuiz();
+    } else {
+        timeEl.textContent = timeLeft;
+        timeLeft--;
+    }
+}
+// Game Function
+function startGame() {
+    countdown();
+    console.log('started')
+    startButton.classList.add('hide');
+    questionContainerEl.classList.remove('hide');
+    nextQuestion();
+}
+// End Function
+function endQuiz() {
+    console.log('done');
+    questionContainerEl.classList.add('hide');
+    endQuizEl.classList.remove('hide');
+    endQuizBtn.classList.remove('hide');
+    clearInterval(timerId);
+}
 
 

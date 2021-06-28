@@ -17,11 +17,9 @@
         <h1>Cosmo Quiz!</h1>
     </div>
 
-
     <body>
-
         <div class="container"></div>
-            <div id="questions-container" class="hide">
+        <div id="questions-container" class="hide">
             <div id="question">Select an answer below!</div>
             <div id="answer-buttons" class="btn-grid">
                 <button class="btn">Answer A</button>
@@ -29,41 +27,27 @@
                 <button class="btn">Answer C</button>
                 <button class="btn">Answer D</button>
             </div>
-            <div id="score-time">
-                <div> score:
-                    <span id="score"></span>
-                </div>
-                <div> time:
-                    <span id="time"></span>
+            <div class="controlers">
+                <button id="start-btn" class="start-btn">Start</button>
+                <button id="next-btn" class="next-btn hide">Next</button>
+            </div>
+            <div id="end-quiz" class="end-quiz hide">
+                <span>Enter Initials: <input type="text" id="submit-score"></input></span>
+                <button id="hs-btn" class="hs-btn hide">Submit Score!</button>
+            </div>
+            <div id="highscores" class="highscores hide">
+                High Score Leader Board
+                <div id="stored-scores">
+                    <ul id="score-board"></ul>
                 </div>
             </div>
         </div>
 
-        <div class="controlers">
-            <button id="start-btn" class="start-btn">Start</button>
-            <button id="next-btn" class="next-btn hide">Next</button>
-        </div>
 
-        <div id= "end-quiz" class="end-quiz hide">
-            <span>Enter Initials: <input type="text" id="submit-score"></input></span>
-            <button id="hs-btn" class="hs-btn hide">Submit Score!</button>
-
-        </div>
-
-        <div id="highscores" class="highscores hide">
-            High Score Leader Board
-            <div id="stored-scores">
-                <ul id ="score-board"></ul>
-            </div>
-        </div>
-         
-    </div>
-
-
-            
-        <footer>
-     Made By Kiessa &hearts;
-        </footer>
         <script src="../assets/main.js"></script>
+        <footer>
+            Made By Kiessa &hearts;
+        </footer>
+      
 
 </html>
