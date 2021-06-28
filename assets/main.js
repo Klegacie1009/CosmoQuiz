@@ -80,5 +80,48 @@ function endQuiz() {
     endQuizBtn.classList.remove('hide');
     clearInterval(timerId);
 }
+// Next Question Function
+function nextQuestion() {
+    questionEl.textContent = questions[counter].question
+    for (let i = 0; i < questions.length; i++) {
+        answerButtonsEl[i].textContent = questions[counter][i];
+    }
+}
+function nextBtnClick(e) {
+    e.preventDefault();
+    if (e.target.localName==='button') {
+        checkAnswer(e.target.textContent);
+    }
+    console.log(e);
+}
+
+// Check Answers
+function checkAnswer(userAnswer) {
+    console.log('correct answer' + questions[counter].answer);
+    console.log('userAnswer' + userAnswer);
+    if (questions[counter].answer === userAnswer) {
+        score += 5;
+        scoreEl.textContent = score;
+        console.log('correct')
+    } else {
+        timeLeft -= 5;
+        console.log('incorrect')
+    }
+    counter++;
+    if (counter === questions.length) {
+        endQuiz();
+    } else {
+        nextQuestion();
+    }
+}
+function nextBtnClick(e) {
+    e.preventDefault();
+    if (e.target.localName==='button') {
+        checkAnswer(e.target.textContent);
+    }
+    console.log(e);
+}
+
+
 
 
