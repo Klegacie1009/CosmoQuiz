@@ -1,72 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 
+</html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Java Quiz</title>
+<link rel="stylesheet" href="../styles/style.css">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Quiz</title>
-    <link rel="stylesheet" href="../styles/style.css" />
-
+    <title>Cosmo Quiz</title>
 </head>
-
-<body>
-    <!-- Start Quiz Button -->
-    <div class="start_btn"><button>Start Quiz</button></div>
-
-    <!-- Info Box -->
-    <div class="info_box">
-        <div class="info_title">
-            <span>Some Rules for this Quiz</span>
-        </div>
-        <div class="info_list">
-            <div class="info">1. You have <span>15 seconds </span>each question.</div>
-            <div class="info">2. Once you select your answer, you cant reselect.</div>
-            <div class="info">3. You cannot select any answers when time runs out!</div>
-            <div class="info">4. No exiting while playing!</div>
-        </div>
-        <div class="buttons">
-            <button class="quit">Exit Quiz</button>
-            <button class="restart">Continue</button>
-        </div>
+</div>
+<div id="main">
+    <div id="header">
+        <h1>Cosmo Quiz!</h1>
     </div>
-<!-- Quiz Box -->
-<div class="quiz_box">
-    <header>
-        <div class="title">Cosmo Quiz Application</div>
-        <div class="timer">
-            <div class="time_text">Time Remaining</div>
-            <div class="timer_sec">15</div>
-        </div>
-    </header>
-    <section>
-        <div class="que_text">
-            <span>What is the natural PH balance of skin on the face?</span>
-        </div>
-        <div class="option_list">
-            <div class="option">
-                <span>7.5</span>
-                <div class="icon tick"><i class="fas fa-check"></i>
+
+
+    <body>
+
+        <div class="container"></div>
+            <div id="questions-container" class="hide">
+            <div id="question">Select an answer below!</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer A</button>
+                <button class="btn">Answer B</button>
+                <button class="btn">Answer C</button>
+                <button class="btn">Answer D</button>
+            </div>
+            <div id="score-time">
+                <div> score:
+                    <span id="score"></span>
                 </div>
-                <div class="option_list">
-        <div class="option">
-                <span>2.0</span>
-                <div class="icon cross"><i class="fas fa-times"></i>
-                 </div>
-        <div class="option_list">
-                <div class="option">
-                <span>4.5</span>
-                <div class="icon"><i class="fas fa-check"></i>
-                </div>         
+                <div> time:
+                    <span id="time"></span>
+                </div>
             </div>
-        </section>
-        <!-- Quiz Box Footer -->
-        <footer>
-            <div class="total_que">
-                <span><p>2</p>Of<p>3</p>Questions</span>
+        </div>
+
+        <div class="controlers">
+            <button id="start-btn" class="start-btn">Start</button>
+            <button id="next-btn" class="next-btn hide">Next</button>
+        </div>
+
+        <div id= "end-quiz" class="end-quiz hide">
+            <span>Enter Initials: <input type="text" id="submit-score"></input></span>
+            <button id="hs-btn" class="hs-btn hide">Submit Score!</button>
+
+        </div>
+
+        <div id="highscores" class="highscores hide">
+            High Score Leader Board
+            <div id="stored-scores">
+                <ul id ="score-board"></ul>
             </div>
-            <button class="next_btn">Next Question</button>
-        </footer>
+        </div>
+         
     </div>
 
-</body>
+
+            
+        <footer>
+     Made By Kiessa &hearts;
+        </footer>
+        <script src="../assets/main.js"></script>
+
 </html>
