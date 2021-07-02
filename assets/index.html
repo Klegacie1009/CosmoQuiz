@@ -8,29 +8,36 @@
 <link rel="stylesheet" href="../styles/style.css">
 <html>
 
-<head>
-    <title>Cosmo Quiz</title>
-</head>
-</div>
+
 <div id="main">
     <div id="header">
         <h1>Cosmo Quiz!</h1>
     </div>
+
     <body>
+
+        <head>
+            <title>Cosmo Quiz</title>
+        </head>
         <div class="container">
-            What Is The Darkest Level Of Hair?
-        </div>
-        <div id="questions-container" class="hide"></div>
-            <div id="question">Select an answer below!</div>
-            <div id="answer-buttons" class="btn-grid">
-                <button class="btn">Answer 0</button>
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
+            <div id="questions-container" class="hide">
+                <div id="question">Select an answer below!</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Answer 0</button>
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                </div>
             </div>
-    </div>
+            <div id="score-time">
+                <div> score:
+                    <span id="score"></span>
+                </div>
+                <div> time:
+                    <span id="time"></span>
+                </div>
+            </div>
             <div id="end-quiz" class="end-quiz hide">
-            <div class="question"></div>
                 <span>Enter Initials: <input type="text" id="submit-score"></input></span>
                 <button id="hs-btn" class="hs-btn hide">Submit Score!</button>
             </div>
@@ -38,23 +45,17 @@
                 High Score Leader Board
                 <div id="stored-scores">
                     <ul id="score-board"></ul>
-                    <div id="score-time">
-                        <div> score:
-                            <span id="score"></span>
-                        </div>
-                        <div> time:
-                            <span id="time"></span>
-                        </div>
-                    </div>
                 </div>
                 <div class="controllers">
                     <button id="start-btn" class="start-btn">Start</button>
                     <button id="next-btn" class="next-btn hide">Next</button>
                 </div>
-        <footer>
-            Made By Kiessa &hearts;
-        </footer>
-        <script src="./main.js"></script>     
-        <script src="../assets/questions.js"></script> 
+            </div>
+            <footer>
+                Made By Kiessa &hearts;
+            </footer>
+            <script src="./main.js"></script>
+            <script src="../assets/questions.js"></script>
     </body>
+
 </html>

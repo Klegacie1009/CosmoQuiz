@@ -1,6 +1,6 @@
 // Elements
 let startButton = document.getElementById('start-btn')
-let questionContainerEl = document.getElementById('question-container')
+let questionContainerEl = document.getElementById('questions-container')
 let questionEl = document.getElementById('question')
 const answerButtonsEl = document.getElementsByClassName('btn')
 let scoreEl = document.getElementById('score')
