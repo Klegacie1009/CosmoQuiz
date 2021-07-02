@@ -30,21 +30,18 @@ I struggled with the Javascript portion the most and placing things in the corre
 ## Victories
 I really enjoyed designing the page and using "Coolors" as a resource for color pallets!
 
-<img src= "../images/Screenshot1.png"/>
+<img src="./images/quizshot.png">
 
 ---
 #
-
-<img src= "#"/>
-
----
+Finished product!
+<img src= "./images/quizshot2.png"/>
 
 
-<img src= "#"/>
 
 ## Resources 
 
-<a href="#">GitHub Repo</a>
+<a href="https://github.com/Klegacie1009/CosmoQuiz">GitHub Repo</a>
 
 <a href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwiLjJ7fosLvAhWXW80KHawRD_oQPAgI">Google</a>
 
